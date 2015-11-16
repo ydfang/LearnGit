@@ -1,6 +1,7 @@
 # Christmas shopping list
-- [] Christmas tree
+- [*] Christmas tree
 - [] flowers
 - [] food
-This is create by Valarie.
+- [] book
+This is created by Valarie.
 
