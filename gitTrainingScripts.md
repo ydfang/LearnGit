@@ -76,11 +76,30 @@ git status
 touch shoppinglist.md
 git commit -a shoppinglist.md
 ```
-    + *Nopte*: If the gitTriningScripts,md also changed, and didn't add to the commit. This commit only sumbit the new file. THis demo the three stages.
++ *Note*: If the gitTriningScripts,md also changed, and didn't add to the commit. This commit only sumbit the new file. This demo the three stages.
 
 - Working branch Valarie
-- Working on branch Yudong
+```
+git branch valarie
+git check valarie
+```
+- Demo delete branch Yudong
+Open another git bash
+```
+git checkout -b ydfang
+git branch
 
+git branch -d ydfang
+```
+
+
+
+## Demo merge by using branch
+- prepare: add another file in the repository 
+```
+touch shoppinglist.md
+git commit -a shoppinglist.md
+```
 
 # Demo tools setting
 ## git

@@ -1,6 +1,11 @@
 # Christmas shopping list
-- [] Christmas tree
+- [*] Christmas tree
 - [] TV
 - [] Computer
-This is create by Valarie and Yudong.
+- [] flowers
+- [] food
+- [] book
+- [] Name card
+This is created by Valarie and Yudong.
+
 
