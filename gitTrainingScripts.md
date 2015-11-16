@@ -95,11 +95,51 @@ git branch -d ydfang
 
 
 ## Demo merge by using branch
-- prepare: add another file in the repository 
+- change fiel in ydfang
 ```
-touch shoppinglist.md
-git commit -a shoppinglist.md
+git checkout ydfang
 ```
+
+cheange file, commit
+change file again, commit
+
+- change fiel in valarie
+```
+git checkout valarie
+```
+
+change file, commit;
+change file again, commit;
+change file again 3, commit;
+
+- switch to master, merge valarie
+```
+git checkout master
+git merge valarie
+```
+This merge hould be finished
+
+- switch to master, merge ydfang
+```
+git checkout master
+git merge ydfang
+```
+
+- Now it said, there is conflict
+> Automatic merge failed;...
+
+- solve the conflict
+```
+git mergetool
+```
+It will bring the kdiff3
+
+Use this tool to merge the confloct part. Then save and exit.
+
+- git commit
+It will merge two branchs.
+
+
 
 # Demo tools setting
 ## git
