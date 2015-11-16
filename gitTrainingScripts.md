@@ -62,8 +62,24 @@ git status
 5. Set gui for git difftool
     - double check the git difftool has been set
     - run command 'git difftool gitTriningScripts.md -y'
-    - - `-y` will save your time
+    - `-y` will save your time
 
+## demo undo
+- Demo unmodify file
+    + modify the gitTriningScripts.md (ex, These line will be undo)
+    + run command `git checkout -- gitTriningScripts.md`
+    + Check the file again
+
+## Demo merge by using branch
+- prepare: add another file in the repository 
+```
+touch shoppinglist.md
+git commit -a shoppinglist.md
+```
+    + *Nopte*: If the gitTriningScripts,md also changed, and didn't add to the commit. This commit only sumbit the new file. THis demo the three stages.
+
+- Working branch Valarie
+- Working on branch Yudong
 
 
 # Demo tools setting
