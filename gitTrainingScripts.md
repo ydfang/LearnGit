@@ -83,10 +83,22 @@ git commit -a shoppinglist.md
 git branch valarie
 git check valarie
 ```
-- Working on branch Yudong
+- Demo delete branch Yudong
 Open another git bash
 ```
 git checkout -b ydfang
+git branch
+
+git branch -d ydfang
+```
+
+
+
+## Demo merge by using branch
+- prepare: add another file in the repository 
+```
+touch shoppinglist.md
+git commit -a shoppinglist.md
 ```
 
 # Demo tools setting
