@@ -1,5 +1,6 @@
 # Christmas shopping list
 - [] Christmas tree
-- [] Name card
-This is create by Valarie.
+- [] TV
+- [] Computer
+This is create by Valarie and Yudong.
 
