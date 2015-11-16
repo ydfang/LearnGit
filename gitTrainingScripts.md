@@ -13,6 +13,8 @@ git config --global user.email ydfang@hotmail.com
 git config --global core.editor '"C:\Program Files\Sublime Text 3\sublime_text.exe" -w'
 git config --global merge.tool kdiff3
 git config --global mergetool.kdiff3.cmd '"C:\\Program Files\\KDiff3\\kdiff3" $BASE $LOCAL $REMOTE -o $MERGED'
+git config --global diff.tool kdiff3
+git config --global difftool.kdiff3.cmd '"C:\\Program Files\\KDiff3\\kdiff3" $BASE $LOCAL'
 ```
 - *Note*: Using '-w' option, so that after you write comments, you don't need to close sublime, jsut close the tab.
 - Kdiff3 is a good tools for 3-way merge. ANother good tools: meld, opendiff, emerge.
@@ -48,6 +50,21 @@ git commit –m “version 1”
 ```
 git status
 ```
+
+# git demo : Elementary
+## Diff
+1. generate a html file which not in the vesion control managemed. (ex, click right button and chose export html)
+2. run command `git status` and check the status
+    - The new create html is showing not in the control
+    - The original showing eighter changed or commit
+3 run copmmand `git status --staged` to check again
+4. run command `git diff HEAD gitTriningScripts.md`
+5. Set gui for git difftool
+    - double check the git difftool has been set
+    - run command 'git difftool gitTriningScripts.md -y'
+    - - `-y` will save your time
+
+
 
 # Demo tools setting
 ## git
