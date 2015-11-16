@@ -1,5 +1,6 @@
 # Christmas shopping list
 - [] Christmas tree
-- [] Name card
+- [] flowers
+- [] food
 This is create by Valarie.
 
