@@ -151,6 +151,48 @@ git checkout -b experiment
 ```
 - change the shoppinglist.md
 
+- run commands
+```
+git add shoppinglist.md
+
+git commit
+git checkout master
+```
+- change shoping list and scripts files.
+```
+git commit -am "Change in the master"
+git checkout experiment
+git rebase master
+```
+
+The output is
+>$ git rebase master <br/>
+>First, rewinding head to replay your work on top of it... <br/>
+>Applying: Try rebashing
+
+![before rebasing graph](beforeRebasing.PNG)
+![after rebasing Graph](afterRebasing.PNG)
+
+# Github
+## SSH keys generate
+### generate in Git Bash
+```
+ssh-keygen -t rsa -C "me@hotmail.com"
+```
+
+### Generate in TortoiseGit
+
+## Add to sshd
+BY default, it save in the ~/.ssh folder.
+
+## Add public key to GitHub
+GitHub support multi public keys so that you can login in multi computers.
+- click the icon on the right toppest, then chose Your profile
+- Click Edit profile in the right top, 
+- Change SSH key in the left side bar, chose Add SSH key
+- Input title, and the putlic keys generated.
+
+For the purpose, add the Tortoise Git generated keys also.
 
 
 # Demo tools setting
