@@ -1,6 +1,6 @@
 # Christmas shopping list
 - [*] Christmas tree
-- [] TV
+- [*] TV
 - [] Computer
 - [] flowers
 - [] food
