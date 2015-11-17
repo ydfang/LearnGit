@@ -139,6 +139,18 @@ Use this tool to merge the confloct part. Then save and exit.
 - git commit
 It will merge two branchs.
 
+- results
+
+![Merged result](log.PNG)
+![Revision Graph](RevisionGraph.PNG)
+
+
+## Demo on regbasing
+``` 
+git checkout -b experiment
+```
+- change the shoppinglist.md
+
 
 
 # Demo tools setting
