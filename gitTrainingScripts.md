@@ -140,45 +140,50 @@ It will merge two branchs.
 - results
 
 ![Merged result](log.PNG)
+
 ![Revision Graph](RevisionGraph.PNG)
 
 
+
 ## Demo on rebasing
+
 ``` 
 git checkout -b experiment
 ```
+
 - change the shoppinglist.md
 
 - run commands
+
 ```
 git add shoppinglist.md
-
 git commit
 git checkout master
 ```
+
 - change shoping list and scripts files.
+
 ```
 git commit -am "Change in the master"
 git checkout experiment
 git rebase master
 ```
 
-The output is
-> git rebase master 
-> First, rewinding head to replay your work on top of it... 
-> Applying: Try rebashing
-
-- The version graphs before rebasing is:
-
+The version graphs before rebasing is:
 
 ![before rebasing graph](beforeRebasing.PNG)
 
 The version graphs after rebasing is:
+
 ![after rebasing graph](afterRebasing.PNG)
 
+
 # Github
+
 ## SSH keys generate
+
 ### generate in Git Bash
+
 ```
 ssh-keygen -t rsa -C "me@hotmail.com"
 ```
