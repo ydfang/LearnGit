@@ -3,7 +3,7 @@
 ## Set up user information
 
 ```
-git config --global user.name "Yudong.Fang"
+git config --global user.name "Yd.Fang"
 git config --global user.email ydfang@hotmail.com
 ```
 
@@ -70,7 +70,8 @@ git status
     + run command `git checkout -- gitTriningScripts.md`
     + Check the file again
 
-## Demo merge by using branch
+
+## Demo branch
 - prepare: add another file in the repository 
 ```
 touch shoppinglist.md
@@ -88,11 +89,8 @@ Open another git bash
 ```
 git checkout -b ydfang
 git branch
-
 git branch -d ydfang
 ```
-
-
 
 ## Demo merge by using branch
 - change fiel in ydfang
@@ -145,7 +143,7 @@ It will merge two branchs.
 ![Revision Graph](RevisionGraph.PNG)
 
 
-## Demo on regbasing
+## Demo on rebasing
 ``` 
 git checkout -b experiment
 ```
@@ -166,12 +164,17 @@ git rebase master
 ```
 
 The output is
->$ git rebase master <br/>
->First, rewinding head to replay your work on top of it... <br/>
->Applying: Try rebashing
+> git rebase master 
+> First, rewinding head to replay your work on top of it... 
+> Applying: Try rebashing
+
+- The version graphs before rebasing is:
+
 
 ![before rebasing graph](beforeRebasing.PNG)
-![after rebasing Graph](afterRebasing.PNG)
+
+The version graphs after rebasing is:
+![after rebasing graph](afterRebasing.PNG)
 
 # Github
 ## SSH keys generate
@@ -194,6 +197,40 @@ GitHub support multi public keys so that you can login in multi computers.
 
 For the purpose, add the Tortoise Git generated keys also.
 
+## Test the connection
+- In git bash, run the command 'ssh -T git@github.com'
+
+## Create repository 
+Click the right top ‘+’ sign
+
+## Import folder
+in the create repository gui, it show how to import an repository (Use SSH in the following)
+```
+git remote add origin git@github.com:ydfang/LearnGit.git
+git push -u origin master
+```
+
+## clone a folder using Tortoise Git
+- chose a folder
+- right click, git clone
+- Chose the Director
+- input the URL, chose the putty private key
+- OK
+
+
+## Try working in two folders and push/pull
+### In git Bash
+``` 
+touch README.md
+```
+- Edit this file
+- `git add README.md`
+- `git summit`
+-  `git push origin master`
+
+### In TortoiseGIt folder
+-right click the folder
+- run git pull
 
 # Demo tools setting
 ## git
@@ -204,3 +241,8 @@ For the purpose, add the Tortoise Git generated keys also.
 
 ## Markdown tools setting
 - Install OmniMarkupPreviewer
+
+## Generate pdf file by pandoc
+```
+pandoc gitTriningScripts.md -o scripts.pdf
+```
