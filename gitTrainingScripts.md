@@ -146,25 +146,30 @@ It will merge two branchs.
 
 
 ## Demo on rebasing
+- Switch to experiment branch and do the change
 
 ``` 
 git checkout -b experiment
 ```
 
 - change the shoppinglist.md
-
-- run commands
+- run commands to commit
 
 ```
 git add shoppinglist.md
 git commit
+```
+
+- change shoping list and scripts files in master branch.
+
+```
 git checkout master
-```
-
-- change shoping list and scripts files.
-
-```
 git commit -am "Change in the master"
+```
+
+- Change to experiment to rebase
+
+```
 git checkout experiment
 git rebase master
 ```
@@ -176,6 +181,14 @@ The version graphs before rebasing is:
 The version graphs after rebasing is:
 
 ![after rebasing graph](afterRebasing.PNG)
+
+
+- Change to master to do the fast forward merging
+
+```
+git checkout master
+git merge experiment
+```
 
 
 # Github
